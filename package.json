@@ -4,6 +4,12 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "imports": {
+    "#root/*": "./*.js",
+    "#src/*": "./src/*.js",
+    "#configs/*": "./src/configs/*.js"
+  },
+
   "scripts": {
     "start": "nodemon NODE_ENV=development src/app.js",
     "prod_start": "nodemon NODE_ENV=production src/app.js"
