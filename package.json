@@ -1,0 +1,28 @@
+{
+  "name": "express-mysql2-bolierplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon NODE_ENV=development app.js",
+    "prod_start": "nodemon NODE_ENV=production app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdswwwj/express-mysql2-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xdswwwj/express-mysql2-boilerplate/issues"
+  },
+  "homepage": "https://github.com/xdswwwj/express-mysql2-boilerplate#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
