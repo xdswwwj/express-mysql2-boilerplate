@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon NODE_ENV=development app.js",
-    "prod_start": "nodemon NODE_ENV=production app.js"
+    "start": "nodemon NODE_ENV=development src/app.js",
+    "prod_start": "nodemon NODE_ENV=production src/app.js"
   },
   "repository": {
     "type": "git",
