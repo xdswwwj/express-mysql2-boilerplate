@@ -9,6 +9,7 @@
     "#src/*": "./src/*.js",
     "#apis/*": "./src/apis/*.js",
     "#routes/*": "./src/apis/routes/*.js",
+    "#controllers/*": "./src/apis/controllers/*.js",
     "#core/*": "./src/core/*.js",
     "#configs/*": "./src/core/configs/*.js",
     "#utils/*": "./src/core/utils/*.js"
