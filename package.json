@@ -7,7 +7,11 @@
   "imports": {
     "#root/*": "./*.js",
     "#src/*": "./src/*.js",
-    "#configs/*": "./src/configs/*.js"
+    "#apis/*": "./src/apis/*.js",
+    "#routes/*": "./src/apis/routes/*.js",
+    "#core/*": "./src/core/*.js",
+    "#configs/*": "./src/core/configs/*.js",
+    "#utils/*": "./src/core/utils/*.js"
   },
   "scripts": {
     "start": "nodemon NODE_ENV=development src/app.js",

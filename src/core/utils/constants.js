@@ -1,0 +1,25 @@
+export const RES_TYPE = {
+  SUCCESS: {
+    EXISTS_DATA: "SUCCESS_EXISTS_DATA",
+    NO_DATA: "SUCCESS_NO_DATA",
+  },
+  SERVER_ERR: "SERVER_ERROR",
+  FRONT_ERR: "NOT_FOUND",
+};
+
+export const RES_STATUS = {
+  SUCCESS: {
+    OK: 200,
+    CREATED: 201,
+    ACCEPTED: 202,
+  },
+  FRONT_ERR: {
+    NOT_FOUND: 404,
+  },
+  SERVER_ERR: {
+    INTERNAL_SERVER_ERR: 500,
+    BAD_GATEWAY: 502,
+    SERVICE_UNAVAILABLE: 503,
+    GATEWAY_TIMEOUT: 504,
+  },
+};
