@@ -7,6 +7,9 @@ import cookieParser from "cookie-parser";
 import * as conf from "#configs/conf";
 import * as CONSTANT from "#utils/constants";
 import * as resFormat from "#utils/responseFormat";
+import { APIS } from "#utils/apis";
+
+import allRoutes from "#routes/index";
 
 const app = express();
 
@@ -14,6 +17,8 @@ app.use(cors(conf.corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+app.use(APIS.INDEX.INDEX, allRoutes);
 
 // 404
 app.use((req, res, next) => {
