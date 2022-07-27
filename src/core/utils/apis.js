@@ -4,7 +4,7 @@ export const APIS = {
   },
   USER: {
     INDEX: "/user",
-    TEST: "/",
+    TEST: "/test",
     GET_USER: "/:id",
   },
 };

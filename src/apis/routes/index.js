@@ -1,6 +1,6 @@
 import express from "express";
 
-import userRoutes from "#routes/user";
+import userRoutes from "#routes/user.routes";
 import { APIS } from "#utils/apis";
 
 const router = express.Router();
