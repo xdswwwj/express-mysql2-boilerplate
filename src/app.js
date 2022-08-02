@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
+import morgan from "morgan";
 
 dotenv.config();
 
@@ -12,6 +13,7 @@ import * as CONSTANT from "#utils/constants";
 import * as resFormat from "#utils/responseFormat";
 import { APIS } from "#utils/apis";
 import { specs, swaggerUi } from "#swagger/swagger";
+import winston from "#utils/winston";
 
 import allRoutes from "#routes/index";
 
@@ -19,9 +21,10 @@ const app = express();
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
-https: app.use(cors(conf.corsOptions));
+app.use(cors(conf.corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(morgan(conf.logger.env, { stream: winston.stream }));
 app.use(cookieParser());
 
 app.use(APIS.INDEX.INDEX, allRoutes);
