@@ -2,6 +2,9 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 // NOTE: File Import
 import * as conf from "#configs/conf";
