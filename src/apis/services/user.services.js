@@ -1,9 +1,14 @@
 import * as CONSTANT from "#utils/constants";
 import * as responseUtils from "#utils/responseFormat";
+import * as models from "#models/index";
 
 export const getUser = async (props) => {
-  const { conn, data } = props;
-  const [rows] = await conn.query("SELECT * FROM city LIMIT 0, 10");
-  console.log("test");
-  return rows;
+  try {
+    const { conn, data } = props;
+    const result = await models.user.getUser({ conn, data });
+
+    return result;
+  } catch (error) {
+    console.log(error);
+  }
 };

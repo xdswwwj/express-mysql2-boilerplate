@@ -7,6 +7,9 @@ export const getUser = async (req, res) => {
   try {
     const result = await wrapper.servicesWrapper({
       cb: services.user.getUser,
+      data: {
+        limit: 20,
+      },
     });
 
     res.json(
