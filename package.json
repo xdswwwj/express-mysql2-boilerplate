@@ -11,6 +11,8 @@
     "#routes/*": "./src/apis/routes/*.js",
     "#controllers/*": "./src/apis/controllers/*.js",
     "#services/*": "./src/apis/services/*.js",
+    "#models/*": "./src/apis/models/*.js",
+    "#sql/*": "./src/apis/sql/*.js",
     "#core/*": "./src/core/*.js",
     "#configs/*": "./src/core/configs/*.js",
     "#utils/*": "./src/core/utils/*.js",
