@@ -1,18 +1,18 @@
 // NOTE: node modules
-import express from "express";
-import cors from "cors";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 import dotenv from "dotenv";
+import express from "express";
 import morgan from "morgan";
 
 dotenv.config();
 
 // NOTE: File Import
 import * as conf from "#configs/conf";
+import { specs, swaggerUi } from "#swagger/swagger";
+import { APIS } from "#utils/apis";
 import * as CONSTANT from "#utils/constants";
 import * as resFormat from "#utils/responseFormat";
-import { APIS } from "#utils/apis";
-import { specs, swaggerUi } from "#swagger/swagger";
 import winston from "#utils/winston";
 
 import allRoutes from "#routes/index";
